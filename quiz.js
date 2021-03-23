@@ -31,17 +31,17 @@ function ArrayCouples(arr){
         // console.log(arrOfSubArrs[j])
         // console.log(arrOfSubArrs[j].reverse())
         console.log(arrOfSubArrs)
-        console.log(arrOfSubArrs.includes(arrOfSubArrs[j]))
+        console.log(arrOfSubArrs.includes(arrOfSubArrs[j])) //always returns true
         console.log(arrOfSubArrs[j])
-        console.log(reverseArray(arrOfSubArrs[j]))
-        console.log(arrOfSubArrs.includes(reverseArray(arrOfSubArrs[j])))
+        console.log(reverseArray(arrOfSubArrs[j])) 
+        console.log(arrOfSubArrs.includes(reverseArray(arrOfSubArrs[j]))) // always returns false
         console.log("************************************************")
         
         
         if( arrOfSubArrs.includes(arrOfSubArrs[j])  && arrOfSubArrs.includes(reverseArray(arrOfSubArrs[j]))){
             console.log("yes")
         }else {
-            console.log(arrOfSubArrs[j])
+            console.log(arrOfSubArrs[j]) //always returns arrOfSubArrs[j] 
         }
 
     }
